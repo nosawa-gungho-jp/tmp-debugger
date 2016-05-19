@@ -22,3 +22,43 @@ require_once( "tmp_debugger.php" );
 
 
 
+●基本的なデバッグ方法
+　　・PHP
+　　　　ファイルにprintfデバッグしたい時は以下のコマンドを使用する。
+
+TMP_DEBUGGER__DebugOutput( "[デバック出力内容]" );
+
+
+　　　　ブラウザにprintfデバッグしたい時は以下のコマンドをあらかじめ設
+　　　　定してから、上記のコマンドを使用する。
+
+TMP_DEBUGGER__SetOutputTypeTMP_DEBUGGER__SetOutputType( STRING__TMP_DEBUGGER__OUTPUT_TYPE__BROWSER );
+
+
+
+●おまけ機能(PHP)
+　　1.出力ファイル名の変更
+
+TMP_DEBUGGER__SetDebugFileName( "[出力ファイル名]" );
+
+
+　　2.場合分け出力
+(ファイル)
+TMP_DEBUGGER__SetDebugFileName( "[出力ファイル名]", "[デバッグタイプ]" );
+
+(ブラウザ)
+TMP_DEBUGGER__SetOutputType( STRING__TMP_DEBUGGER__OUTPUT_TYPE__BROWSER, "[デバッグタイプ]" );
+
+
+　　3.出力バッファに貯めて後で出力
+
+(貯める)
+$aaOptions = array();
+$aaOptions["RealTime"] = FALSE;
+TMP_DEBUGGER__DebugOutput( "[デバック出力内容]", "[デバッグタイプ]", $aaOptions );
+
+(出力)
+TMP_DEBUGGER__DebugOutput_OutputBuffer( "[デバッグタイプ]" );
+
+
+
