@@ -8,7 +8,7 @@
 
 // define
 define( "STRING__TMP_DEBUGGER__DEBUG_TYPE__DEFAULT", "default" );
-define( "STRING__TMP_DEBUGGER__DEBUG_TYPE__DEFAULT_ERROR", "default" );
+define( "STRING__TMP_DEBUGGER__DEBUG_TYPE__DEFAULT_ERROR", "default-error" );
 define( "STRING__TMP_DEBUGGER__OUTPUT_TYPE__FILE", "file" );
 define( "STRING__TMP_DEBUGGER__OUTPUT_TYPE__BROWSER", "browser" );
 define( "INTEGER__TMP_DEBUGGER__DEBUG_TYPE__COLUMN__OUTPUT_TYPE", 0 );
