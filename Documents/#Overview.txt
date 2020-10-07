@@ -40,7 +40,7 @@ TMP_DEBUGGER__DebugOutput( "[デバック出力内容]" );
 　　　　ブラウザにprintfデバッグしたい時は以下のコマンドをあらかじめ設
 　　　　定してから、上記のコマンドを使用する。
 
-TMP_DEBUGGER__SetOutputTypeTMP_DEBUGGER__SetOutputType( STRING__TMP_DEBUGGER__OUTPUT_TYPE__BROWSER );
+TMP_DEBUGGER__SetOutputType( STRING__TMP_DEBUGGER__OUTPUT_TYPE__BROWSER );
 
 
 
